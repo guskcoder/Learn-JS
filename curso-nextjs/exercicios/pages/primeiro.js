@@ -1,3 +1,0 @@
-function primeiro() {
-  return 'Primeiro';
-}
