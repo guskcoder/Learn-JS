@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Primeiro Programa</title>
+    <style>
+      body {
+        background-color: black;
+        color: greenyellow;
+        font: normal 20pt georgia;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+      window.alert('Bem vindo ao meu Mundo !');
+      window.confirm('Está gostando do JS ?');
+      let nome = window.prompt('Qual é seu nome ?');
+
+      let texto = (document.querySelector('h1').innerText = 'Hello ' + nome);
+    </script>
+  </body>
+</html>
