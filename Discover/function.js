@@ -1,9 +1,6 @@
-// Aplicativos de Frase Emocional
-
-function createFrase() {
-  console.log('Frase 1');
-  console.log('Frase 2');
-  console.log('Frase 3');
-}
-
-createFrase();
+fetch('https://api.github.com/users/guskcoder').then((response) =>
+  response
+    .json()
+    .then((data) => fetch(data.repos_url))
+    .then((res) => res.json().then((d) => console.log(d)))
+);
