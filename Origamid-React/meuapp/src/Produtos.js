@@ -1,11 +1,20 @@
 import React from 'react';
+import Produto from './Produto';
 import Titulo from './Titulo';
 
 const Produtos = () => {
+  const produtos = [
+    { nome: 'Notebook', propriedades: ['16gb ram', '512gb'] },
+    { nome: 'Smartphone', propriedades: ['2gb ram', '128gb'] },
+    { nome: 'Tablet', propriedades: ['1gb ram', '64gb'] },
+  ];
+
   return (
     <section>
       <Titulo texto="Produtos" />
-      <p>Essa é Página de Produtos</p>
+      {produtos.map((produto) => (
+        <Produto key={produto.nome} {...produto} />
+      ))}
     </section>
   );
 };
