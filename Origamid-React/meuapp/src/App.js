@@ -1,7 +1,8 @@
 import React from 'react';
 
 const App = () => {
-  return <section></section>;
+  const ativo = true;
+  return <button disabled={!ativo}>{ativo ? 'Ativo' : 'Inativo'}</button>;
 };
 
 export default App;
