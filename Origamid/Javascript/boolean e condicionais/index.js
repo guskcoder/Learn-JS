@@ -19,4 +19,7 @@ if (nome) {
 }
 
 if (!possuiGraduacao) {
+  console.log('Falso')
+} else{
+  console.log('Verdadeiro')
 }
