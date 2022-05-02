@@ -17,3 +17,6 @@ if (nome) {
 } else {
   console.log('Nome não Definido');
 }
+
+if (!possuiGraduacao) {
+}
