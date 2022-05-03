@@ -43,4 +43,9 @@ function terceiraIdade(idade) {
   }
 }
 
-console.log(terceiraIdade(60));
+// console.log(terceiraIdade(60));
+
+function faltaVisitar(paisQueVisitei) {
+  var totalPaises = 193;
+  return `Falta Visitar ${totalPaises - paisQueVisitei} países`;
+}
