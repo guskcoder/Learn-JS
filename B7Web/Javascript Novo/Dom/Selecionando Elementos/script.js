@@ -5,8 +5,13 @@ function clicou() {
   let newLi = document.createElement('li');
   newLi.innerText = 'Item adicionado';
 
-  // Adicionar no Incio
-  ul.prepend(newLi);
-  // Adicionar no final
-  ul.append(newLi);
+  ul.after(newLi);
+
+  // after = depois
+  // before = antes
+
+  // // Adicionar no Incio
+  // ul.prepend(newLi);
+  // // Adicionar no final
+  // ul.append(newLi);
 }
